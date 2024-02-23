@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Einfache Google Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC48K0rvFpN2To_X7mq_Xpdeej7_nG7X5M&callback=initMap" async defer></script>
+    <script>
+        // Funktion zur Initialisierung der Karte
+        function initMap() {
+            var mapDiv = document.getElementById('map'); // Referenz auf das HTML-Element mit der ID 'map'
+            var map = new google.maps.Map(mapDiv, {
+                center: {lat: 44.540, lng: -78.546}, // Koordinaten für den Mittelpunkt der Karte
+                zoom: 8 // Zoomlevel
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="map" style="height: 400px; width: 100%;"></div> <!-- Container für die Karte -->
+</body>
+</html>
